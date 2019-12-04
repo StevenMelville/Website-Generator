@@ -1,0 +1,7 @@
+<div class="article">
+This is a template article. Feel free to replace the text in this article with your own.
+<br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin nisi id augue rhoncus tempus. Donec fringilla velit quis lacinia consequat. Donec porta, leo vel pellentesque rhoncus, tortor dui tincidunt nunc, rutrum blandit orci elit vitae nulla. Nam scelerisque feugiat pulvinar. Suspendisse mi sapien, commodo a tortor sodales, tempor facilisis ante. Integer tempor mollis orci sit amet convallis. Donec hendrerit augue elit, eu sagittis magna pulvinar quis. Fusce condimentum vitae nunc eu tincidunt.
+<br>
+Praesent faucibus ex bibendum, venenatis ex eu, volutpat lacus. Etiam tempus dui metus, ornare lacinia lorem malesuada at. Duis ut sollicitudin enim. Sed in augue facilisis, blandit eros feugiat, placerat lorem. Pellentesque nunc eros, scelerisque id mauris et, vehicula ornare augue. Nulla a porta mi, gravida dictum diam. Nullam et tristique odio, quis auctor tortor. Duis ultricies, ante sit amet elementum faucibus, odio risus pharetra metus, et porttitor magna arcu eu sapien.
+</div>

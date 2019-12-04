@@ -111,6 +111,10 @@ void Color::operator=(const Color & color){
 	this->R = color.R;
 	this->G = color.G;
 	this->B = color.B;
+	
+	array[0] = R;
+	array[1] = G;
+	array[2] = B;
 }
 
 Color operator+(const Color & color1 , const Color & color2){

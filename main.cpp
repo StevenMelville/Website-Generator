@@ -7,7 +7,12 @@ using namespace std;
 int main(){
 	string title;
 	cout << "Enter a title for your website: ";
-	cin >> title;
-	Website site(title);
+	getline(cin, title);
+	cout << "How many articles do you want?" << endl;
+	int num;
+	cin >> num;
+	Website site;
+	site.setTitle(title);
+	site.setNumArticles(num);
 	site.generateWebsite();
 }

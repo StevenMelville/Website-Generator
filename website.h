@@ -7,10 +7,13 @@ class Website{
 	private:
 		string title;
 		Color bgColor, textColor, primary, secondary, thirdary;
+		int numArticles;
 	public:
-		Website(string);
+		Website();
 		void generateWebsite();
 		int getColor();
 		void createIcon();
+		void setTitle(string);
+		void setNumArticles(int);
 };
 #endif

@@ -12,7 +12,6 @@ class Color{
 		unsigned char R, G, B;
 		unsigned char array[3];
 	public:
-		friend class Color;
 		Color();
 		void setColor(int);
 		void setColor(unsigned char, unsigned char, unsigned char);

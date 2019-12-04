@@ -5,25 +5,49 @@
 #include <exception>
 using namespace std;
 
-Website::Website(string title = "website"){
-	try{
+Website::Website(){
+}
+
+void Website::setTitle(string title){
 		this->title = title;
+}
+
+void Website::setNumArticles(int num){
+	numArticles = num;
+}
+
+void Website::generateWebsite(){
+	try{
+		cout << "Choose the primary Color" << endl;
 		primary.setColor(getColor());
+		cout << "Choose the secondary Color" << endl;
 		secondary.setColor(getColor());
 		thirdary = primary + secondary;
 		bgColor = primary;
 		textColor = thirdary;
 		createIcon();
 	}catch(exception e){
-		
 	}
-}
-void Website::generateWebsite(){
+	
 	ofstream myfile ("index.html");
+	string temp;
 	if (myfile.is_open())
 	{
-		myfile  << "<html><head><title>" + title + "</title></head><body style= 'background-color: " + bgColor.getColor()
-				<<"; color: " + textColor.getColor() + "'>Hello, this is default text</body></html>";
+		myfile  << "<html><head><title>" + title + "</title><link rel='stylesheet' href='styles.css'></head>"
+				<< "<body style= 'background-color: " + bgColor.getColor()
+			 	<< "; color: " + textColor.getColor() + "'><div class='header' style='background-color:" + thirdary.getColor() +"; color: " + secondary.getColor() + "'><img src='icon.bmp'><div class='title'><h1>Welcome to " + title + "</h1></div></div></body></html>"
+				<< "";
+		myfile  << "<div class='container'>";
+		for(int i = 1; i <= numArticles; i++){
+			ifstream article("article.txt");
+			if(article.is_open()){
+				while(getline(article, temp)){
+					myfile << temp;
+				}
+			}
+			article.close();
+		}
+		myfile  << "</div>";
 		myfile.close();
 	}
 	else cout << "Unable to open file";
